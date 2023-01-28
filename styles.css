@@ -16,6 +16,11 @@ header {
   align-items: center;
 }
 
+#typingText {
+  height: 50px;
+  width: 250px;
+}
+
 a:link, a:visited {
   color: #fff;
   font-weight: bold;
@@ -26,4 +31,9 @@ section {
   width: 80%;
   margin: auto;
   padding: 1vw;
+}
+
+article {
+  width: 80%;
+  margin: auto;
 }
