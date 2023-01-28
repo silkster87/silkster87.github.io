@@ -10,7 +10,7 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 80%;
   margin: 64px auto 16px auto;
   align-items: center;
@@ -37,3 +37,23 @@ article {
   width: 80%;
   margin: auto;
 }
+
+.skillsList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+figure > img {
+  width: 48px
+}
+
