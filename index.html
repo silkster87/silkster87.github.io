@@ -15,19 +15,44 @@
   <header>
     <aside>
       <h1>Silky Ng</h1>
-      <h2 id="typingText"></h2>
+      <h3 id="typingText"></h3>
     </aside>
     <aside>
       <img src="images/profile_pic_comp.jpg" alt="Silky profile picture" style="width: 20vw; min-width: 100px; max-width: 400px; border-radius: 64px">
     </aside>
   </header>
   <section>
-    <p>I am a recent front-end oriented full-stack developer. In 2022 I decided to change careers after having worked in IT Support for 5 years.</p>
-    <p>Currently I work at social money transfer app called <a href="https://www.kixy.com/">Kixy</a> implementing and refactoring features on their internal BackOffice dashboard.</p>
+    <p>I am a recent front-end oriented full-stack developer. 
+      In 2022 I decided to change careers after having worked in IT Support for 5 years.<br>
+      
+      Currently I work at a social money transfer company  
+      <a href="https://www.kixy.com/" style="padding-top: 4px; text-decoration: none; width: 70px"><img id="kixyLogo" src="images/kixyLogo.svg" alt="Kixy Logo">
+      </a>
+    </p>
+    <article class="linksContainer">
+      <aside>
+        <a href="https://github.com/silkster87/" class="personalLinks">
+          <img src="images/githubIcon.svg" alt="GitHub logo" style="width: 24px">
+          <strong>Github</strong>
+        </a>
+      </aside>
+      <aside>
+        <a href="https://linkedin.com/in/silky-ng/" class="personalLinks">
+          <img src="images/linkedinIcon.svg" alt="Linkedin Icon" style="width: 24px">
+          <strong>Linkedin</strong>
+        </a>
+      </aside>
+      <aside class="cvDownload">
+        <a href="documents/silkyng-cv.pdf" Download class="personalLinks">
+          <img src="images/downloadIcon.svg" alt="Download CV Icon" style="width: 24px">
+          <strong>CV Download</strong>
+        </a>
+      </aside>
+    </article>
   </section>
   <article>
     <h3>Skills</h3>
-    <section class="skillsList">
+    <article class="skillsList">
       <figure>
         <img src="images/reactLogo.svg" alt="React logo">
         <p>React</p>
@@ -39,6 +64,14 @@
       <figure>
         <img src="images/typescriptLogo.svg" alt="TypeScript logo">
         <p>TypeScript</p>
+      </figure>
+      <figure>
+        <img src="images/html5Icon.svg" alt="HTML icon">
+        <p>HTML 5</p>
+      </figure>
+      <figure>
+        <img src="images/css3Icon.svg" alt="CSS 3 icon">
+        <p>CSS 3</p>
       </figure>
       <figure>
         <img src="images/nodejsIcon.svg" alt="NodeJS logo">
@@ -60,7 +93,63 @@
         <img src="images/mongodbIcon.svg" alt="MongoDB logo">
         <p>MongoDB</p>
       </figure>
-    </section>
+    </article>
   </article>
+  <article class="experience">
+    <h3>Experience</h3>
+    <figure>
+      <img src="images/kixyLogo.svg" alt="Kixy Logo" style="width: 100px">
+      <aside>
+        <p>Kixy | July 2022 - Present</p>
+      </aside>
+      <p>Kixy is a social money transfer app. Primary front-end role in refactoring and implementing new features on the internal dashboard. 
+        Features include details of transactions, pairs rates, customers and configuration settings. The dashboard is built using React JavaScript, connected to AWS AppSync, Cognito with dynamoDB and GraphQL in a serverless architecture.</p>
+    </figure>
+    <figure>
+      <img src="images/finWizLogo.png" alt="FinWiz Investment Tracker" style="width: 120px">
+      <aside>
+        <p>FinWiz | May 2022</p>
+      </aside>
+      <p>Open source project group project for an investment portfolio app to track investments from stocks, crypto and commodities. 
+        Primarily back-end role implementing Express server with PostgreSQL with Prisma ORM. API data obtained from <a href="https://coinmarketcap.com/api/">CoinMarketCap</a>, <a href="https://iexcloud.io/">iex cloud</a> and <a href="https://newsapi.org/">News API</a><br>
+      </p>
+      <aside class="linksContainer" style="gap: 16px;">
+        <a href="https://github.com/silkster87/FinWiz_server" class="personalLinks" target="_blank">
+          <img src="images/githubIcon.svg" alt="GitHub logo" style="width: 24px; margin-right: 8px;">
+          Github Repo
+        </a>
+        <a href="https://youtu.be/tp0J9fNyDNU" class="personalLinks">
+          <img src="images/youtubeIcon.svg" alt="Youtube icon" style="width: 24px; background-color: white; border-radius: 8px; height: 20px">
+          YouTube Demo
+        </a>
+      </aside>
+    </figure>
+    <figure>
+      <img src="images/jobColumnLogo.png" alt="Job Column Logo" style="width: 80px">
+      <p>JobColumn | April 2022</p>
+      <p style="text-align: justify;">Open source project to refactor into TypeScript and improve UI and data flow. Implemented unit and integration tests
+        using Jest and e2e testing with Cypress.
+      </p>
+    </figure>
+    <figure>
+      <p>Department for Education</p>
+      <p>2nd Line Support</p>
+    </figure>
+  </article>
+  <article>
+    <h3>Projects</h3>
+    <figure>
+      <p>PlantSpotter</p>
+    </figure>
+  </article>
+  <article>
+    <h3>Interests</h3>
+    <figure>
+      <p>Piano</p>
+    </figure>
+  </article>
+  <footer>
+    <h3>Contact</h3>
+  </footer>
 </body>
 </html>
