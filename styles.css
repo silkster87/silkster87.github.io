@@ -12,6 +12,14 @@ h1 {
   font-size: 2.1em;
 }
 
+h3 {
+  text-decoration: underline;
+}
+
+#typingText {
+  text-decoration: none;
+}
+
 #typingText:after {
   content: "|";
   animation: blink 500ms linear infinite alternate
@@ -100,6 +108,10 @@ article {
   width: 100%;
 }
 
+.skillsList > figure {
+  margin: 0px 0px 16px 0px;
+}
+
 .skillsList::-webkit-scrollbar {
   width: 4px;
   height: 8px;
@@ -151,10 +163,16 @@ article > figure {
 }
 
 .experience > figure {
-  width: 100%;
   margin: 16px 0px;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
+@media only screen and (max-width: 600px) {
+  .linksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
