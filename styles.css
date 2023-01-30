@@ -169,6 +169,14 @@ article > figure {
   gap: 4px;
 }
 
+
+.projects > figure {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0px;
+}
+
 @media only screen and (max-width: 600px) {
   .linksContainer {
     display: flex;
