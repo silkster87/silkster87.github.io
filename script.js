@@ -38,7 +38,7 @@ const wordflick = function () {
         offset--;
       }
     }
-    document.getElementById('typingText').innerHTML = part;
+    document.getElementById('typing-text').innerHTML = part;
   },speed);
 };
 
