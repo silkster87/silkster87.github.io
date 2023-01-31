@@ -345,6 +345,10 @@ footer > article {
   transition: 0.3s;
 }
 
+li {
+  line-height: 1.8;
+}
+
 @media only screen and (max-width: 750px) {
   .links-container {
     display: flex;
