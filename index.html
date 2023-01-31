@@ -12,7 +12,7 @@
   <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
-  <header class="topHeader">
+  <header class="top-header">
     <div class="logo">
       <p>Silky Ng</p>
     </div>
@@ -43,7 +43,7 @@
   <header>
     <aside>
       <h1>Silky Ng</h1>
-      <h3 id="typingText"></h3>
+      <h3 id="typing-text"></h3>
     </aside>
     <aside>
       <img src="images/profile_pic_comp.jpg" alt="Silky profile picture" style="width: 20vw; min-width: 100px; max-width: 400px; border-radius: 64px">
@@ -54,33 +54,39 @@
       In 2022 I decided to change careers after having worked in IT Support for 5 years.<br>
       
       Currently I work at a social money transfer company  
-      <a href="https://www.kixy.com/" style="padding-top: 4px; text-decoration: none; width: 70px"><img id="kixyLogo" src="images/kixyLogo.svg" alt="Kixy Logo">
+      <a href="https://www.kixy.com/" style="padding-top: 4px; text-decoration: none; width: 70px"><img id="kixy-logo" src="images/kixyLogo.svg" alt="Kixy Logo">
       </a>
     </p>
-    <article class="linksContainer">
+    <article class="links-container">
       <aside>
-        <a href="https://github.com/silkster87/" class="personalLinks">
+        <a href="https://github.com/silkster87/" class="personal-links">
           <img src="images/githubIcon.svg" alt="GitHub logo" style="width: 24px">
           <strong>Github</strong>
         </a>
       </aside>
       <aside>
-        <a href="https://linkedin.com/in/silky-ng/" class="personalLinks">
+        <a href="https://linkedin.com/in/silky-ng/" class="personal-links">
           <img src="images/linkedinIcon.svg" alt="Linkedin Icon" style="width: 24px">
           <strong>Linkedin</strong>
         </a>
       </aside>
-      <aside class="cvDownload">
-        <a href="documents/silkyng-cv.pdf" Download class="personalLinks">
+      <aside class="cv-download">
+        <a href="documents/silkyng-cv.pdf" Download class="personal-links">
           <img src="images/downloadIcon.svg" alt="Download CV Icon" style="width: 24px">
           <p>CV Download</p>
+        </a>
+      </aside>
+      <aside>
+        <a href="mailto:silky.ng@gmail.com';" class="personal-links">
+          <img src="images/email.svg" style="width: 24px" alt="email icon">
+          <p>Email</p>
         </a>
       </aside>
     </article>
   </section>
   <article id="skills">
     <h3>Skills</h3>
-    <article class="skillsList">
+    <article class="skills-list">
       <figure>
         <img src="images/reactLogo.svg" alt="React logo">
         <p>React</p>
@@ -132,7 +138,7 @@
       </aside>
       <p>Kixy is a social money transfer app. Primary front-end role in refactoring and implementing new features on the internal dashboard. 
         Features include details of transactions, pairs rates, customers and configuration settings. The dashboard is built using React JavaScript, connected to AWS AppSync, Cognito with dynamoDB and GraphQL in a serverless architecture.</p>
-      <a href="https://kixy.com" target="_blank" class="personalLinks">
+      <a href="https://kixy.com" target="_blank" class="personal-links">
         <img src="images/kixySmileIcon.svg" alt="Kixy Logo" style="width: 16px">
         Official Website
       </a>
@@ -142,12 +148,12 @@
       <aside style="margin-bottom: 8px;">
         <p>FinWiz | May 2022 | Remote</p>
       </aside>
-      <iframe class="youtubeVideo" src="https://www.youtube.com/embed/tp0J9fNyDNU" title="FinWiz Investment Tracker" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="youtube-video" src="https://www.youtube.com/embed/tp0J9fNyDNU" title="FinWiz Investment Tracker" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <p style="margin-top: 8px;">Open source group project for an investment portfolio app to track investments from stocks, crypto and commodities. 
         Primarily back-end role implementing Express server with PostgreSQL with Prisma ORM. API data obtained from <a href="https://coinmarketcap.com/api/">CoinMarketCap</a>, <a href="https://iexcloud.io/">iex cloud</a> and <a href="https://newsapi.org/">News API</a><br>
       </p>
-      <aside class="linksContainer" style="gap: 16px;">
-        <a href="https://github.com/silkster87/FinWiz_server" class="personalLinks" target="_blank">
+      <aside class="links-container" style="gap: 16px;">
+        <a href="https://github.com/silkster87/FinWiz_server" class="personal-links" target="_blank">
           <img src="images/githubIcon.svg" alt="GitHub logo" style="width: 24px; margin-right: 8px;">
           Github Repo
         </a>
@@ -159,7 +165,7 @@
       <p style="text-align: justify;">Open source project to refactor into TypeScript and improve UI and data flow. Implemented unit and integration tests
         using Jest and E2E testing with Cypress.
       </p>
-      <a href="https://github.com/silkster87/Job-COLumn" class="personalLinks" target="_blank">
+      <a href="https://github.com/silkster87/Job-COLumn" class="personal-links" target="_blank">
         <img src="images/githubIcon.svg" alt="GitHub logo" style="width: 24px; margin-right: 8px;">
         Github Repo
       </a>
@@ -172,30 +178,30 @@
       </p>
     </figure>
   </article>
-  <article class="generalArticle" id="projects">
+  <article class="general-article" id="projects">
     <h3>Projects</h3>
     <figure>
       <div style="text-align: center; height: 48px; width: 48px">
         <img src="images/plantSpotterIcon.svg" alt="Plant Spotter Logo" style="width: 100px">
       </div>
       <p style="margin-top: 4px;">PlantSpotter</p>
-      <iframe class="youtubeVideo" src="https://www.youtube.com/embed/9dDHbwZbm78" title="Plant Spotter App" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="youtube-video" src="https://www.youtube.com/embed/9dDHbwZbm78" title="Plant Spotter App" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <p style="margin-top: -4px">An React Native Expo app for identifying plants. By taking a picture or uploading a photo of a plant it will suggest the best result
         from <a href="https://plant.id/">plant.id API.</a> Implemented firebase login authentication and mongoDB for data storage.
       </p>
-      <aside class="linksContainer" style="gap: 16px;">
-        <a href="https://github.com/silkster87/plantspotter" class="personalLinks" target="_blank">
+      <aside class="links-container" style="gap: 16px;">
+        <a href="https://github.com/silkster87/plantspotter" class="personal-links" target="_blank">
           <img src="images/githubIcon.svg" alt="GitHub logo" style="width: 24px; margin-right: 8px;">
           Github Repo
         </a>
       </aside>
     </figure>
   </article>
-  <article class="generalArticle" id="interests">
+  <article class="general-article" id="interests">
     <h3>Interests</h3>
     <figure>
       <p>Piano</p>
-      <iframe class="youtubeVideo" src="https://www.youtube.com/embed/vQY-Nx5vee8" title="Over the Rainbow Jazz Piano" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe class="youtube-video" src="https://www.youtube.com/embed/vQY-Nx5vee8" title="Over the Rainbow Jazz Piano" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <p>I have been playing the piano for over 25 years and am a member of <a href="https://www.bromleymusicmakers.org/">Bromley Music Makers</a> in which I manage their website. I enjoy performing and listening to a variety of musicians.</p>
     </figure>
   </article>
@@ -209,7 +215,7 @@
           <button class="footerBtn" id="giveCallBtn" type="button"><a href="tel+447541069941">Give a call</a></button>
         </aside>
     </article>
-    <section class="lastSection">
+    <section class="last-section">
       <p>Created by Silky Ng on <a href="https://pages.github.com/">Github Pages</a> 2023</p>
     </section>
   </footer>

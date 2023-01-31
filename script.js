@@ -38,11 +38,9 @@ const wordflick = function () {
         offset--;
       }
     }
-    document.getElementById('typingText').innerHTML = part;
+    document.getElementById('typing-text').innerHTML = part;
   },speed);
 };
 
-const toggleMobileMenu = function (menu) {
-  menu.classList.toggle('open');
-}
+
 wordflick();
