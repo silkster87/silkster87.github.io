@@ -12,6 +12,34 @@
   <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
+  <header class="topHeader">
+    <div class="logo">
+      <p>Silky Ng</p>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
   <header>
     <aside>
       <h1>Silky Ng</h1>
@@ -45,12 +73,12 @@
       <aside class="cvDownload">
         <a href="documents/silkyng-cv.pdf" Download class="personalLinks">
           <img src="images/downloadIcon.svg" alt="Download CV Icon" style="width: 24px">
-          <strong>CV Download</strong>
+          <p>CV Download</p>
         </a>
       </aside>
     </article>
   </section>
-  <article>
+  <article id="skills">
     <h3>Skills</h3>
     <article class="skillsList">
       <figure>
@@ -95,7 +123,7 @@
       </figure>
     </article>
   </article>
-  <article class="experience">
+  <article class="experience" id="experience">
     <h3>Experience</h3>
     <figure>
       <img src="images/kixyLogo.svg" alt="Kixy Logo" style="width: 100px">
@@ -111,10 +139,11 @@
     </figure>
     <figure>
       <img src="images/finWizLogo.png" alt="FinWiz Investment Tracker" style="width: 120px">
-      <aside>
+      <aside style="margin-bottom: 8px;">
         <p>FinWiz | May 2022 | Remote</p>
       </aside>
-      <iframe class="youtubeVideo" src="https://www.youtube.com/embed/tp0J9fNyDNU" title="FinWiz Investment Tracker" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      <p>Open source group project for an investment portfolio app to track investments from stocks, crypto and commodities. 
+      <iframe class="youtubeVideo" src="https://www.youtube.com/embed/tp0J9fNyDNU" title="FinWiz Investment Tracker" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <p style="margin-top: 8px;">Open source group project for an investment portfolio app to track investments from stocks, crypto and commodities. 
         Primarily back-end role implementing Express server with PostgreSQL with Prisma ORM. API data obtained from <a href="https://coinmarketcap.com/api/">CoinMarketCap</a>, <a href="https://iexcloud.io/">iex cloud</a> and <a href="https://newsapi.org/">News API</a><br>
       </p>
       <aside class="linksContainer" style="gap: 16px;">
@@ -143,7 +172,7 @@
       </p>
     </figure>
   </article>
-  <article class="generalArticle">
+  <article class="generalArticle" id="projects">
     <h3>Projects</h3>
     <figure>
       <div style="text-align: center; height: 48px; width: 48px">
@@ -162,7 +191,7 @@
       </aside>
     </figure>
   </article>
-  <article class="generalArticle">
+  <article class="generalArticle" id="interests">
     <h3>Interests</h3>
     <figure>
       <p>Piano</p>
@@ -170,12 +199,12 @@
       <p>I have been playing the piano for over 25 years and am a member of <a href="https://www.bromleymusicmakers.org/">Bromley Music Makers</a> in which I manage their website. I enjoy performing and listening to a variety of musicians.</p>
     </figure>
   </article>
-  <footer>
+  <footer id="contact">
     <article>
       <h3>Contact</h3>
       <p>I always take pleasure in being curious and inquisitve about other people.
          Whether that is collaborating on new coding projects, or music related I am more than happy to help. It is best to email me and I shall respond swiftly.</p>
-        <aside>
+        <aside style="margin-top: 8px;">
           <button class="footerBtn" id="sendEmailBtn" type="button"><a href="mailto:silky.ng@gmail.com';">Send Email</a></button>
           <button class="footerBtn" id="giveCallBtn" type="button"><a href="tel+447541069941">Give a call</a></button>
         </aside>
