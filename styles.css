@@ -1,5 +1,10 @@
 :root {
-  --reactBlue: #61dafb;
+  --reactBlue: #286a7c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,6 +15,51 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.topHeader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: #0e2058;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 1000;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li {
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a {
+  padding: 20px;
+  display: block;
+  transition: 0.3s;
+}
+
+header .navbar ul li a:hover {
+  background: var(--reactBlue);
 }
 
 h1 {
