@@ -199,7 +199,6 @@ article {
 .skills-list > figure {
   border: 1px solid var(--reactBlue);
   border-radius: 8px;
-  max-width: 100px;
   min-height: 200px;
   padding-top: 12px;
   padding-bottom: 0px;
