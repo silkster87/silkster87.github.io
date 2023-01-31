@@ -1,3 +1,7 @@
+:root {
+  --reactBlue: #61dafb;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #202124;
@@ -122,16 +126,16 @@ article {
 }
 
 .skillsList::-webkit-scrollbar-thumb {
-  background: #61dafb;
+  background: var(--reactBlue);
   border-radius: 8px;
 }
 
 .skillsList::-webkit-scrollbar-thumb:hover {
-  background: #61aefb;
+  background: var(--reactBlue);
 }
 
 .skillsList > figure {
-  border: 1px solid #61dafb;
+  border: 1px solid var(--reactBlue);
   border-radius: 8px;
   min-width: 100px;
   min-height: 200px;
@@ -154,7 +158,7 @@ figure > img {
 }
 
 article > figure {
-  border: 1px solid #61dafb;
+  border: 1px solid var(--reactBlue);
   border-radius: 8px;
   padding: 16px;
   display: flex;
@@ -170,7 +174,7 @@ article > figure {
 }
 
 
-.projects > figure {
+.generalArticle > figure {
   display: flex;
   flex-direction: column;
   width: auto;
@@ -180,6 +184,41 @@ article > figure {
 .youtubeVideo {
   aspect-ratio: 16/9;
   width: 80%;
+}
+
+footer {
+  width: 80%;
+  display: inline;
+}
+
+footer > article {
+  margin-top: 16px;
+}
+
+.footerBtn {
+  border: 1px solid var(--reactBlue);
+  border-radius: 8px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  margin-right: 16px;
+  transition: 0.3s;
+}
+
+.footerBtn:hover {
+  background-color: var(--reactBlue);
+  color: black;
+}
+
+.footerBtn:hover a {
+  color: black;
+}
+
+.lastSection {
+  margin-top: 4px;
+  font-size: 12px;
+  width: fit-content;
 }
 
 @media only screen and (max-width: 600px) {
