@@ -34,18 +34,19 @@ body {
 
 .logo {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   width: 80%;
   height: 50px;
 }
 
-.navbar ul {
+ul {
   list-style: none;
 }
 
@@ -58,11 +59,11 @@ header .navbar ul li a {
   padding: 20px;
   display: block;
   height: 50px;
-  transition: 0.3s;
 }
 
 header .navbar ul li a:hover {
-  background: var(--reactBlue);
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 h1 {
@@ -282,7 +283,61 @@ footer > article {
   width: fit-content;
 }
 
-@media only screen and (max-width: 600px) {
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 20vh;
+  width: 100%;
+  background-color: #28292a;
+}
+
+.mobile-menu li a {
+  line-height: 2.5;
+}
+
+.mobile-menu li a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 700px) {
   .linksContainer {
     display: flex;
     flex-direction: column;
@@ -291,5 +346,18 @@ footer > article {
 
   article > figure {
     padding: 16px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .topHeader {
+    justify-content: flex-end;
+    padding-right: 32px;
   }
 }
