@@ -235,6 +235,10 @@ article > figure {
   gap: 16px;
 }
 
+.experience {
+  margin-top: 16px;
+}
+
 .experience > figure {
   margin: 16px 0px;
   display: flex;
