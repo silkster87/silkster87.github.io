@@ -42,5 +42,7 @@ const wordflick = function () {
   },speed);
 };
 
-
+const toggleMobileMenu = function (menu) {
+  menu.classList.toggle('open');
+}
 wordflick();
