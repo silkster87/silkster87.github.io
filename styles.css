@@ -177,6 +177,11 @@ article > figure {
   margin: 0px;
 }
 
+.youtubeVideo {
+  aspect-ratio: 16/9;
+  width: 80%;
+}
+
 @media only screen and (max-width: 600px) {
   .linksContainer {
     display: flex;
