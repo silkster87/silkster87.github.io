@@ -13,17 +13,17 @@
 </head>
 <body>
   <header class="topHeader">
-    
+    <div class="logo">
+      <p>Silky Ng</p>
+    </div>
     <nav class="navbar">
-      <div class="logo">
-        <p>SN</p>
-      </div>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -32,10 +32,11 @@
       <div class="bar3"></div>
       <ul class="mobile-menu">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </header>
@@ -77,7 +78,7 @@
       </aside>
     </article>
   </section>
-  <article>
+  <article id="skills">
     <h3>Skills</h3>
     <article class="skillsList">
       <figure>
@@ -122,7 +123,7 @@
       </figure>
     </article>
   </article>
-  <article class="experience">
+  <article class="experience" id="experience">
     <h3>Experience</h3>
     <figure>
       <img src="images/kixyLogo.svg" alt="Kixy Logo" style="width: 100px">
@@ -170,7 +171,7 @@
       </p>
     </figure>
   </article>
-  <article class="generalArticle">
+  <article class="generalArticle" id="projects">
     <h3>Projects</h3>
     <figure>
       <div style="text-align: center; height: 48px; width: 48px">
@@ -189,7 +190,7 @@
       </aside>
     </figure>
   </article>
-  <article class="generalArticle">
+  <article class="generalArticle" id="interests">
     <h3>Interests</h3>
     <figure>
       <p>Piano</p>
@@ -197,7 +198,7 @@
       <p>I have been playing the piano for over 25 years and am a member of <a href="https://www.bromleymusicmakers.org/">Bromley Music Makers</a> in which I manage their website. I enjoy performing and listening to a variety of musicians.</p>
     </figure>
   </article>
-  <footer>
+  <footer id="contact">
     <article>
       <h3>Contact</h3>
       <p>I always take pleasure in being curious and inquisitve about other people.
