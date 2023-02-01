@@ -29,19 +29,20 @@ body {
   right: 0px;
   background: var(--reactBlue);
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
   width: 100%;
   height: 50px;
   margin-top: 0px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .logo {
   font-weight: bold;
-  font-size: 18px;
+  margin-top: 8px;
 }
 
 .navbar {
@@ -110,6 +111,14 @@ p {
 #typing-text:after {
   content: "|";
   animation: blink 500ms linear infinite alternate
+}
+
+.profile-pic {
+  width: 20vw;
+  min-width: 100px;
+  max-width: 400px;
+  border-radius: 64px;
+  margin-top: 16px;
 }
 
 .links-container {
@@ -345,7 +354,11 @@ footer > article {
   transition: 0.3s;
 }
 
-@media only screen and (max-width: 750px) {
+li {
+  line-height: 1.8;
+}
+
+@media only screen and (max-width: 800px) {
   .links-container {
     display: flex;
     flex-direction: column;
@@ -362,12 +375,6 @@ footer > article {
 
   #hamburger-icon {
     display: block;
-  }
-
-  .top-header {
-    justify-content: space-between;
-    padding-right: 32px;
-    padding-left: 32px;
   }
 
 }
