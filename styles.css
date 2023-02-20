@@ -42,7 +42,10 @@ body {
 
 .logo {
   font-weight: bold;
-  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
 }
 
 .navbar {
@@ -367,7 +370,7 @@ li {
     align-items: flex-start;
   }
 
-  article > figure {
+  article:not(.skills-list) > figure {
     padding: 16px;
   }
 
