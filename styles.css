@@ -363,6 +363,14 @@ li {
   line-height: 1.8;
 }
 
+.pb-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 119px;
+  margin: auto;
+}
+
+
 @media only screen and (max-width: 962px) {
   .links-container {
     display: flex;
