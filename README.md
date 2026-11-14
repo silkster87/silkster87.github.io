@@ -1,7 +1,12 @@
-# silkyng.com Personal Website
-Personal Website hosed on [silkyng.com](https://silkyng.com) through [github pages](https://pages.github.com/)
-<br>
-Mobile and desktop responsive
-<section>
-  <img src="readme-images/personal-website-mobile.PNG" style="width: 300px; margin-top: 16px">
-</section>
+﻿# Silky Ng personal website
+
+A React, TypeScript and Vite version of my personal website, published with GitHub Pages.
+
+## Local development
+
+```sh
+npm install
+npm run dev
+```
+
+Create a production build with `npm run build`. The GitHub Actions workflow deploys the `dist` directory to GitHub Pages whenever `main` is updated.
