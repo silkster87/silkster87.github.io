@@ -2,12 +2,15 @@
   "name": "silky-ng-portfolio",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://silkster87.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -17,6 +20,7 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.3.4",
+    "gh-pages": "^6.3.0",
     "typescript": "~5.7.2",
     "vite": "^6.0.7",
     "vitest": "^2.1.8"
